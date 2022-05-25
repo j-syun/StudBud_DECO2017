@@ -1,0 +1,31 @@
+{
+  "name": "studbud_deco2017",
+  "version": "1.0.0",
+  "description": "DECO2017 A3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prestart": "parcel build ./public/index.html",
+    "dev": "parcel serve ./public/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/j-syun/StudBud_DECO2017.git"
+  },
+  "keywords": [
+    "Assignment",
+    "3"
+  ],
+  "author": "Jess Chen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/j-syun/StudBud_DECO2017/issues"
+  },
+  "homepage": "https://github.com/j-syun/StudBud_DECO2017#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "parcel": "^2.5.0"
+  }
+}
