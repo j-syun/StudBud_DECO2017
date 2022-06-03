@@ -1,42 +1,4 @@
 @import "https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap";
-.app-container {
-  background-color: #f5f5f5;
-  padding-top: 20px;
-  padding-left: 120px;
-}
-
-.page-container {
-  margin: 4em;
-}
-
-.page-container#home {
-  text-align: center;
-}
-
-html {
-  box-sizing: border-box;
-  font-size: 16px;
-}
-
-*, :before, :after {
-  box-sizing: inherit;
-}
-
-body, h1, h2, h3, h4, h5, h6, p, ol, ul {
-  margin: 0;
-  padding: 0;
-  font-weight: normal;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -47,10 +9,10 @@ img {
 :root {
   --body-color: #e4e9f7;
   --sidebar-color: #fff;
-  --primary-color: #695cfe;
+  --primary-color: #8075ff;
   --primary-color-light: #f6f5ff;
   --toggle-color: #ddd;
-  --text-color: #707070;
+  --text-color: #000;
   --tran-03: all .2s ease;
   --tran-03: all .3s ease;
   --tran-04: all .3s ease;
@@ -123,8 +85,8 @@ body.dark {
 
 .sidebar .text {
   white-space: nowrap;
-  opacity: 1;
-  font-size: 17px;
+  opacity: .9;
+  font-size: 14px;
   font-weight: 500;
 }
 
@@ -200,23 +162,12 @@ body.dark .sidebar header .toggle {
 }
 
 .sidebar li.search-box {
+  height: 50%;
+  width: 100%;
   background-color: var(--primary-color-light);
   cursor: pointer;
   transition: var(--tran-05);
   border-radius: 6px;
-}
-
-.sidebar li.search-box input {
-  height: 100%;
-  width: 100%;
-  background-color: var(--primary-color-light);
-  color: var(--text-color);
-  transition: var(--tran-05);
-  border: none;
-  border-radius: 6px;
-  outline: none;
-  font-size: 17px;
-  font-weight: 500;
 }
 
 .sidebar li a {
@@ -225,7 +176,7 @@ body.dark .sidebar header .toggle {
   width: 100%;
   transition: var(--tran-03);
   background-color: #0000;
-  border-radius: 6px;
+  border-radius: 25px;
   align-items: center;
   text-decoration: none;
   list-style: none;
@@ -349,25 +300,4 @@ body.dark .home .text {
   color: var(--text-color);
 }
 
-#task-grid {
-  grid-template: "taskform tasklist" 1fr
-  / 1fr 1fr;
-  display: grid;
-}
-
-#taskform {
-  max-width: 300px;
-  grid-area: taskform;
-  margin: 0 auto;
-}
-
-#taskform label {
-  width: 100%;
-  display: block;
-}
-
-#tasklist {
-  grid-area: tasklist;
-}
-
-/*# sourceMappingURL=index.c74267d1.css.map */
+/*# sourceMappingURL=index.7b256799.css.map */
