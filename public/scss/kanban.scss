@@ -67,7 +67,7 @@
   .todo .close {
     position: absolute;
     right: 1rem;
-    font-size: 2rem;
+    font-size: 1rem;
     color: #8075FF;
     cursor: pointer;
   }
@@ -136,10 +136,11 @@
   }
   
   #todo_submit {
-    background-color: #4caf50;
-    color: #f3f3f3;
-    font-size: 1.25rem;
-    border: none;
+    color: #8075FF;
+    background-color: #FFF;
+    font-size: 0.9rem;
+    border-color: #8075FF;
+    border-radius: 25px;
   }
   
   
