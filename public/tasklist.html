@@ -1,64 +1,99 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Home</title>
-    <link href="scss/main.scss" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reading List</title>
+
+    <!---- CSS ---->
+    <link rel="stylesheet" href="scss/navbar.scss">
+
+    <!----===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
 
-<body class="app-container">
+<body>
+    <!-------------- Sidebar Navigation ------------------------------->
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <!--<img src="logo.png" alt="">-->
+                </span>
 
-    <nav class="vertical top-nav">
-        <ul class="nav-links">
-            <li class="nav-item"><a href="./tasklist.html">Tasks</a></li>
-            <li class="nav-item"><a href="./index.html" class="active">Reading List</a></li>
-        </ul>
-    </nav>
-
-    <div id='page1' class="page-container">
-        <h1>Tasks</h1>
-            <div id="task-grid">
-                <form id="taskform">
-                    <label for="task">Task:</label>
-                    <input type="text" name="task" id="taskInput" required>
-
-                    <!-- Date input -->
-                    <label for="dueDate">Due Date: </label>
-                    <input type="date" name="dueDate" id="dueDateInput">
-
-                    <!-- Time input -->
-                    <label for="completionTime">Completion Time: </label>
-                    <input type="time" name="completionTime" id="completionTimeInput">
-
-                    <label for="estimatedTime">Estimated completion time (in mins):</label>
-                    <input type="number" name="estimatedTime" id="estimatedTimeInput">
-                    <!-- Priority -->
-
-
-                    <label for="priority">Task Priority:</label>
-                    <select name="prority" id="priorityInput">
-                        <option value="">Select one</option>
-                        <option value="Low">Low</option>
-                        <option value="Medium">Medium</option>
-                        <option value="High">High</option>
-                    </select>
-
-                    <br>
-
-                    <button type="submit">Submit</button>
-                </form>
-                <div id="tasklist">
-                    <p id="emptyList">You have not added any tasks yet.</p>
-                    <ul></ul>
+                <div class="text logo-text">
+                    <span class="name">STUDBUD</span>
+                    <span class="profession">Hello, Jennie. </span>
                 </div>
             </div>
 
-    </div>
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
 
-    <script src="script.js">
-    </script>
+        <div class="menu-bar">
+            <div class="menu">
+                <li class="search-box">
+                    <span class = "text nav-text">Good Morning, Jennie </span>
+                </li>
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="index.html">
+                            <i class='bx bx-task icon' ></i>
+                            <span class="text nav-text">Tasks</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="tasklist.html">
+                            <i class='bx bx-book-reader icon' ></i>
+                            <span class="text nav-text">Reading List</span>
+                        </a>
+                    </li>
+                        <br>
+                        <hr>
+                        <br>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-time-five icon'></i>
+                            <span class="text nav-text">Pomodoro</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-stopwatch icon'></i>
+                            <span class="text nav-text">Stopwatch</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-music icon' ></i>
+                            <span class="text nav-text">Music</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class ="bottom-content">
+                <li class="mode">
+                    <div class="sun-moon">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+                    <span class="mode-text text">Dark mode</span>
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+            </div>
+        </div>
+    </nav>
+
+    <section class="home">
+        <div class="text">Reading List</div>
+    </section>
+
+    <script src="script.js"> </script>
 </body>
 
 </html>
