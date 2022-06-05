@@ -1,0 +1,55 @@
+/*-------=========== STOPWATCH CSS STYLING ==========-------------*/
+/*------====== CODE REFERENCE: https://github.com/TylerPottsDev/yt-js-stopwatch ========---------*/
+/*body {
+	background-color: var(--dark);
+	color: var(--light);
+}*/
+
+.watch {
+	text-align: center;
+	background-color: var(--darkdark);
+	width: 100%;
+	//max-width: 100px;
+	//margin: 4rem auto;
+	padding: 1rem 2rem;
+	border-radius: 1rem;
+}
+
+.watch .time {
+	font-size: 2rem;
+    color:#FFF;
+	font-weight: 500;
+	margin-bottom: 1rem;
+}
+
+.controls {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.controls button {
+	appearance: none;
+	background: none;
+	outline:#FFF;
+	border:#FFF;
+	cursor: pointer;
+
+	margin: 0 0.5rem;
+	padding: 0.5rem 1rem;
+	border-radius: 25px;
+
+	color: #FFF;
+	background-color: var(--primary);
+
+	transition: 0.4s;
+	user-select: none;
+}
+
+.controls button:hover {
+	opacity: 0.7;
+}
+
+.controls button:active {
+	background-color: var(--dark);
+}

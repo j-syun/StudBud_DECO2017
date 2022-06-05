@@ -17,6 +17,7 @@
   
 
     <body>
+        <!--===== CODE REFERENCE: https://www.codinglabweb.com/2022/03/admin-dashboard-panel-html-css-javascript.html ====---->
         <nav>
           <div class="logo-name">
             <div class="logo-image">
@@ -39,22 +40,29 @@
               <br>
               <hr>
               <br>
-              <!--------- drop down menu https://www.w3schools.com/howto/howto_js_dropdown_sidenav.asp ------------->
+              <!---------===== CODE REFERENCE: https://www.w3schools.com/howto/howto_js_dropdown_sidenav.asp =====------------->
               <li>
-                    
                         <a class="link-name" class="dropdown-btn"><i class="uil uil-stopwatch"></i>Pomodoro<i class="uil uil-angle-down"></i></a>
                         <section class="dropdown-container" class="sub-menu">
                             insert pomodoro<br><br>
                         </section>
-                    
-                  
             </li>
               <li>
                   <a class="link-name" class="dropdown-btn"><i class="uil uil-hourglass"></i>Stopwatch<i class="uil uil-angle-down"></i></a>
                     <section class="dropdown-container">
-                        insert stopwatch<br><br>
+                        <!--- === CODE REFERENCE: https://github.com/TylerPottsDev/yt-js-stopwatch ===--->
+                        <div class="watch">
+                            <div class="time">
+                                00:00:00
+                            </div>
+                            <div class="controls">
+                                <button id="start">Start</button>
+                                <button id="stop">Stop</button>
+                                <button id="reset">Reset</button>
+                            </div>
+                        </div>
                     </section>
-            </li>
+              </li>
               <li>
                   <a class="link-name" class="dropdown-btn"><i class="uil uil-music"></i>Music<i class="uil uil-angle-down"></i></a>
                     <section class="dropdown-container">
@@ -91,6 +99,7 @@
           </div>
       
           <div class="dash-content">
+              <!--==== CODE REFERENCE: https://github.com/Basir-PD/100-Projects-HTML-CSS-JavaScript/tree/master/10%20-%20Create%20Todo%20App%20(Drag%20&%20Drop)-->
             <div class="kanban">
               <div class="title"></div>
       

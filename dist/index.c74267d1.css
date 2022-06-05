@@ -316,6 +316,7 @@ nav.close ~ .dashboard .top {
 .dropdown-container {
   opacity: 1;
   background-color: #8075ff;
+  border-radius: 20px;
 }
 
 @media (max-width: 1000px) {
@@ -549,6 +550,51 @@ nav.close ~ .dashboard .top {
     width: 100%;
     left: 0;
   }
+}
+
+.watch {
+  text-align: center;
+  background-color: var(--darkdark);
+  width: 100%;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+}
+
+.watch .time {
+  color: #fff;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.controls {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.controls button {
+  appearance: none;
+  cursor: pointer;
+  color: #fff;
+  background: none;
+  background-color: var(--primary);
+  -webkit-user-select: none;
+  user-select: none;
+  border: #fff;
+  border-radius: 25px;
+  outline: #fff;
+  margin: 0 .5rem;
+  padding: .5rem 1rem;
+  transition: all .4s;
+}
+
+.controls button:hover {
+  opacity: .7;
+}
+
+.controls button:active {
+  background-color: var(--dark);
 }
 
 /*# sourceMappingURL=index.c74267d1.css.map */
