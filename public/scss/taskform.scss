@@ -1,0 +1,10 @@
+.taskform {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#todo_input, #dueDateInput, #completionTimeInput, #estimatedTimeInput, #priorityInput {
+    border-color:#8075FF;
+    border-radius: 10px;
+}

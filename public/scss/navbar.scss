@@ -9,9 +9,9 @@
 /*----===== CODE REFERENCE: https://www.codinglabweb.com/2022/03/admin-dashboard-panel-html-css-javascript.html=====---- */
 :root{
     /* ===== Colors ===== */
-    --primary-color: #8075FF;
-    --panel-color: #FFF;
-    --text-color: #000;
+    --primary-color: #d9d5ff;
+    --panel-color: white;
+    --text-color: #3A3B3C;
     --black-light-color: #707070;
     --border-color: #e6e5e5;
     --toggle-color: #DDD;
@@ -94,6 +94,7 @@ nav .menu-items{
     display: flex;
     align-items: center;
     height: 50px;
+    //font-weight: 600;
     text-decoration: none;
     position: relative;
 }
@@ -122,7 +123,7 @@ nav.close li a .link-name{
 }
 .nav-links li a:hover i,
 .nav-links li a:hover .link-name{
-    color: var(--primary-color);
+    color: #8075FF;
 }
 body.dark .nav-links li a:hover i,
 body.dark .nav-links li a:hover .link-name{
@@ -212,89 +213,14 @@ nav.close ~ .dashboard .top{
     align-items: center;
     margin: 60px 0 30px 0;
 }
-.dash-content .title i{
-    position: relative;
-    height: 35px;
-    width: 35px;
-    background-color: var(--primary-color);
-    border-radius: 6px;
-    color: var(--title-icon-color);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
-}
-.dash-content .title .text{
-    font-size: 24px;
-    font-weight: 500;
-    color: var(--text-color);
-    margin-left: 10px;
-}
-.dash-content .boxes{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-.dash-content .boxes .box{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 12px;
-    width: calc(100% / 3 - 15px);
-    padding: 15px 20px;
-    background-color: var(--box1-color);
-    transition: var(--tran-05);
-}
-.boxes .box i{
-    font-size: 35px;
-    color: var(--text-color);
-}
-.boxes .box .text{
-    white-space: nowrap;
-    font-size: 18px;
-    font-weight: 500;
-    color: var(--text-color);
-}
-.boxes .box .number{
-    font-size: 40px;
-    font-weight: 500;
-    color: var(--text-color);
-}
-.boxes .box.box2{
-    background-color: var(--box2-color);
-}
-.boxes .box.box3{
-    background-color: var(--box3-color);
-}
 
-
-.dropdown-btn {
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 20px;
-    color: #FFF;
-    display: block;
-    border: none;
-    background: none;
-    width:100%;
-    text-align: left;
-    cursor: pointer;
-    outline: none;
-  }
-
-  .uil-angle-down {
-    float: right;
-    padding-right: 8px;
-  }
-
-  .dropdown-container {
-    opacity: 1;
-    background-color:#8075FF;
+.dropdown-container {
+    //background-color: #d9d5ff;
+    background-color: #FFF;
     border-radius: 20px;
-  }
-
-  
+    border-color: #8075FF;
+    border-style: groove;
+}
 
 
 @media (max-width: 1000px) {

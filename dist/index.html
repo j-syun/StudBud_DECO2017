@@ -16,10 +16,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <!----- ===== POMODORO ICONS =======----->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <title>StudBud</title>
+    </head>
   
 
-    </head><body>
+    <body>
         <!--===== CODE REFERENCE: https://www.codinglabweb.com/2022/03/admin-dashboard-panel-html-css-javascript.html ====---->
         <nav>
           <div class="logo-name">
@@ -44,15 +48,17 @@
               <hr>
               <br>
               <!---------===== CODE REFERENCE: https://www.w3schools.com/howto/howto_js_dropdown_sidenav.asp =====------------->
+            
               <li>
                         <a class="link-name"><i class="uil uil-stopwatch"></i>Pomodoro<i class="uil uil-angle-down"></i></a>
-                        <section class="dropdown-container">
-                            insert pomodoro<br><br>
-                        </section>
-            </li>
+                        <div class="dropdown-container">
+                        <!-- ==== CODE REFERENCE: https://codepen.io/dcode-software/pen/XWgyOpg ===-->
+                            <div class="timer"></div>
+                        </div>
+              </li>
               <li>
                   <a class="link-name"><i class="uil uil-hourglass"></i>Stopwatch<i class="uil uil-angle-down"></i></a>
-                    <section class="dropdown-container">
+                    <div class="dropdown-container">
                         <!--- === CODE REFERENCE: https://github.com/TylerPottsDev/yt-js-stopwatch ===--->
                         <div class="watch">
                             <div class="time">
@@ -64,11 +70,11 @@
                                 <button id="reset">Reset</button>
                             </div>
                         </div>
-                    </section>
+                    </div>
               </li>
               <li>
                   <a class="link-name"><i class="uil uil-music"></i>Music<i class="uil uil-angle-down"></i></a>
-                    <section class="dropdown-container">
+                    <div class="dropdown-container">
                         <!-- ====== CODE REFERENCE: https://github.com/kaizhelam/Music-Player ========----->
                         <div class="player">
                             <div class="wrapper">
@@ -118,14 +124,12 @@
                                      <span class="stroke"></span>
                                      <span class="stroke"></span>
                                  </div>  
-                                 <br>
-                                 <br>
-                                 <br>
                             </div>
                         </div>
-                    </section>
-            </li>
+                    </div>
+              </li>
             </ul>
+            
       
             <ul class="logout-mode">
               <li><a href="#">
@@ -168,23 +172,23 @@
                   </div>
                   <div class="body">
                     <form id="taskform">
+                    <!-- Task Input-->
                       <label for="task">Task:</label>
-                      <input type="text" id="todo_input">
-                      <!--<input type="text" name="task" id="todoInput" required>-->
-      
-                      <!-- Date input -->
+                      <input type="text" name="task" id="todo_input">
+                        <br>
+                      <!-- Date Input -->
                       <label for="dueDate">Due Date: </label>
                       <input type="date" name="dueDate" id="dueDateInput">
-      
-                      <!-- Time input -->
+                        <br>
+                      <!-- Time Input -->
                       <label for="completionTime">Completion Time: </label>
                       <input type="time" name="completionTime" id="completionTimeInput">
-      
+                        <br>
+                      <!-- Estimated Completion-->
                       <label for="estimatedTime">Estimated completion time (in mins):</label>
                       <input type="number" name="estimatedTime" id="estimatedTimeInput">
+                        <br>
                       <!-- Priority -->
-      
-      
                       <label for="priority">Task Priority:</label>
                       <select name="prority" id="priorityInput">
                         <option value="">Select one</option>

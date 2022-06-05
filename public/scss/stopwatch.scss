@@ -17,7 +17,7 @@
 
 .watch .time {
 	font-size: 2rem;
-    color:#FFF;
+    color:#3A3B3C;
 	font-weight: 500;
 	margin-bottom: 1rem;
 }
@@ -29,17 +29,17 @@
 }
 
 .controls button {
-	appearance: none;
+	//appearance: none;
 	background: none;
-	outline:#FFF;
-	border:#FFF;
+	outline:#3A3B3C;
+	border:#3A3B3C;
 	cursor: pointer;
 
 	margin: 0 0.5rem;
 	padding: 0.5rem 1rem;
 	border-radius: 25px;
 
-	color: #FFF;
+	color: #3A3B3C;
 	background-color: var(--primary);
 
 	transition: 0.4s;
