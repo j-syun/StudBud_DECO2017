@@ -1,4 +1,3 @@
-@import "https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap";
 @import "https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap";
 * {
   box-sizing: border-box;
@@ -315,10 +314,8 @@ nav.close ~ .dashboard .top {
 }
 
 .dropdown-container {
-  opacity: .5;
-  background-color: #fff;
-  padding-left: 20px;
-  display: none;
+  opacity: 1;
+  background-color: #8075ff;
 }
 
 @media (max-width: 1000px) {
