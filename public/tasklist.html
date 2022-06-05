@@ -12,17 +12,23 @@
     <!----===== Iconscout CSS ===== -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
+    <!----====== MUSIC PLAYER ICONS ========---->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!----- ===== POMODORO ICONS =======----->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  
+    <link rel="icon" type="image/x-icon" href="images/studbud.jpeg">
     <title>Reading List</title 
     </head>
   
 
     <body>
+        <!--===== CODE REFERENCE: https://www.codinglabweb.com/2022/03/admin-dashboard-panel-html-css-javascript.html ====---->
         <nav>
           <div class="logo-name">
-            <div class="logo-image">
-              <!--<img src="images/logo.png" alt="">-->
-            </div>
-      
             <span class="logo_name">STUDBUD</span>
           </div>
       
@@ -39,20 +45,89 @@
               <br>
               <hr>
               <br>
-              <li><a href="#">
-                  <i class="uil uil-stopwatch"></i>
-                  <span class="link-name">Pomodoro</span>
-                </a></li>
-      
-              <li><a href="#">
-                  <i class="uil uil-hourglass"></i>
-                  <span class="link-name">Stopwatch</span>
-                </a></li>
-              <li><a href="#">
-                  <i class="uil uil-music"></i>
-                  <span class="link-name">Music</span>
-                </a></li>
+              <!---------===== CODE REFERENCE: https://www.w3schools.com/howto/howto_js_dropdown_sidenav.asp =====------------->
+            
+              <li class="submenu-container">
+                        <a class="link-name" class="dropdown-btn"><i class="uil uil-stopwatch"></i>Pomodoro<i class="uil uil-angle-down"></i></a>
+                        <div class="dropdown-container">
+                        <!-- ==== CODE REFERENCE: https://codepen.io/dcode-software/pen/XWgyOpg ===-->
+                            <div class="timer"></div>
+                        </div>
+              </li>
+              <li class="submenu-container">
+                  <a class="link-name" class="dropdown-btn"><i class="uil uil-hourglass"></i>Stopwatch<i class="uil uil-angle-down"></i></a>
+                    <div class="dropdown-container">
+                        <!--- === CODE REFERENCE: https://github.com/TylerPottsDev/yt-js-stopwatch ===--->
+                        <div class="watch">
+                            <div class="time">
+                                00:00:00
+                            </div>
+                            <div class="controls">
+                                <button id="start">Start</button>
+                                <button id="stop">Stop</button>
+                                <button id="reset">Reset</button>
+                            </div>
+                        </div>
+                    </div>
+              </li>
+              <li  class="submenu-container">
+                  <a class="link-name" class="dropdown-btn"><i class="uil uil-music"></i>Music<i class="uil uil-angle-down"></i></a>
+                    <div class="dropdown-container">
+                        <!-- ====== CODE REFERENCE: https://github.com/kaizhelam/Music-Player ========----->
+                        <div class="player">
+                            <div class="wrapper">
+                                <div class="details">
+                                    <div class="now-playing">PLAYING x OF y</div>
+                                    <div class="track-art"></div>
+                                    <div class="track-name">Track Name</div>
+                                    <div class="track-artist">Track Artist</div>
+                                </div>
+                     
+                                <div class="slider_container">
+                                    <div class="current-time">00:00</div>
+                                     <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+                                     <div class="total-duration">00:00</div>
+                                </div>
+                     
+                                <div class="slider_container">
+                                    <i class="fa fa-volume-down"></i>
+                                     <input type="range" min="1" max="100" value="99" class="volume_slider" onchange="setVolume()">
+                                     <i class="fa fa-volume-up"></i>
+                                </div>
+                     
+                                <div class="buttons">
+                                    <div class="random-track" onclick="randomTrack()">
+                                        <i class="fas fa-random fa-2x" title="random"></i>
+                                    </div>
+                                    <div class="prev-track" onclick="prevTrack()">
+                                         <i class="fa fa-step-backward fa-2x"></i>
+                                     </div>
+                                     <div class="playpause-track" onclick="playpauseTrack()">
+                                         <i class="fa fa-play-circle fa-5x"></i>
+                                     </div>
+                                     <div class="next-track" onclick="nextTrack()">
+                                         <i class="fa fa-step-forward fa-2x"></i>
+                                     </div>
+                                     <div class="repeat-track" onclick="repeatTrack()">
+                                         <i class="fa fa-repeat fa-2x" title="repeat"></i>
+                                     </div>
+                                </div>
+                     
+                                 <div id="wave">
+                                     <span class="stroke"></span>
+                                     <span class="stroke"></span>
+                                     <span class="stroke"></span>
+                                     <span class="stroke"></span>
+                                     <span class="stroke"></span>
+                                     <span class="stroke"></span>
+                                     <span class="stroke"></span>
+                                 </div>  
+                            </div>
+                        </div>
+                    </div>
+              </li>
             </ul>
+            
       
             <ul class="logout-mode">
               <li><a href="#">
@@ -81,7 +156,74 @@
             <!--<img src="images/profile.jpg" alt="">-->
           </div>
       
-          <div class="dash-content"></div>
+          <div class="dash-content">
+              <!--==== CODE REFERENCE: https://github.com/Basir-PD/100-Projects-HTML-CSS-JavaScript/tree/master/10%20-%20Create%20Todo%20App%20(Drag%20&%20Drop)-->
+            <div class="kanban">
+              <div class="title"></div>
+      
+              <div class="boxes">
+                <!-- modal -->
+                <div class="modal" id="todo_form">
+                  <div class="header">
+                    <div class="title">Add Todo</div>
+                    <button class="btn close-modal">&times;</button>
+                  </div>
+                  <div class="body">
+                    <form id="taskform">
+                    <!-- Task Input-->
+                      <label for="task">Task:</label>
+                      <input type="text" name ="task" id="todo_input"/>
+                        <br>
+                      <!-- Date Input -->
+                      <label for="dueDate">Due Date: </label>
+                      <input type="date" name="dueDate" id="dueDateInput">
+                        <br>
+                      <!-- Time Input -->
+                      <label for="completionTime">Completion Time: </label>
+                      <input type="time" name="completionTime" id="completionTimeInput">
+                        <br>
+                      <!-- Estimated Completion-->
+                      <label for="estimatedTime">Estimated completion time (in mins):</label>
+                      <input type="number" name="estimatedTime" id="estimatedTimeInput">
+                        <br>
+                      <!-- Priority -->
+                      <label for="priority">Task Priority:</label>
+                      <select name="prority" id="priorityInput">
+                        <option value="">Select one</option>
+                        <option value="Low">Low</option>
+                        <option value="Medium">Medium</option>
+                        <option value="High">High</option>
+                      </select>
+                      <br>
+                    </form>
+      
+                    <input type="submit" value="Add Todo" id="todo_submit" />
+                  </div>
+                </div>
+      
+                <!-- todo -->
+                <div class="todo-container">
+                  <div class="status" id="no_status">
+                    <h1>Reading List</h1>
+                    <button id="add_btn" data-target-modal="#todo_form">+ Add Link</button>
+                    <div class="todo" draggable="true">
+                      Self-Limiting Designer | https://medium.com/design-bootcamp/self-limiting-designer-a0051edee0b4
+                      <span class="close">&times;</span>
+                    </div>
+                  </div>
+      
+                  <div class="status">
+                    <h1 id="newlist">Favourites</h1>
+                  </div>
+      
+                  <div class="status">
+                    <h1 id="newlist">New List</h1>
+                  </div>
+                  <div id="overlay"></div>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
       
         <script src="script.js"></script>

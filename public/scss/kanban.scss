@@ -28,7 +28,7 @@
     left: 0;
     background-color: #FFF;
     font-family: "Poppins";
-    color: black;
+    color: #343444;
     margin: 0;
     width: 100%;
     padding: 0.5rem 1rem;
@@ -89,10 +89,10 @@
     width: 100vh;
     position: fixed;
     top: -100%;
-    left: 50%;
+    left: 60%;
     transform: translate(-50%, -50%);
     transition: top 0.3s ease-in-out;
-    border: 1px solid #ccc;
+    //border: 1px solid #ccc;
     border-radius: 10px;
     z-index: 2;
     background-color: #fff;
@@ -108,7 +108,7 @@
     align-items: center;
     border-bottom: 1px solid #ccc;
     padding: 0.5rem;
-    background-color: #d9d5ff;
+    background-color: #f2f0ff;
   }
   
   .modal .body {
@@ -123,7 +123,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(182, 184, 202, 0.3);
   }
   
   #overlay.active {
@@ -132,8 +132,8 @@
   
   #todo_input,
   #todo_submit {
-    padding: 0.5rem 1rem;
-    width: 100%;
+    padding: 1rem 0.5rem;
+    width: 50%;
     margin: 0.25rem;
   }
   

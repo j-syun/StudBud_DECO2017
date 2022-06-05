@@ -70,7 +70,7 @@ nav .logo-image img {
 }
 
 nav .logo-name .logo_name {
-  color: var(--text-color);
+  color: #8075ff;
   transition: var(--tran-05);
   margin-left: 14px;
   font-size: 22px;
@@ -232,9 +232,13 @@ nav.close ~ .dashboard .top {
 
 .dropdown-container {
   background-color: #fff;
-  border-style: groove;
-  border-color: #8075ff;
+  border-style: solid;
+  border-color: #8175ff98;
   border-radius: 20px;
+}
+
+.link-name-color {
+  color: #8075ff;
 }
 
 @media (max-width: 1000px) {
@@ -311,7 +315,7 @@ nav.close ~ .dashboard .top {
 }
 
 .status h1 {
-  color: #000;
+  color: #343444;
   width: 100%;
   background-color: #fff;
   margin: 0;
@@ -374,12 +378,11 @@ nav.close ~ .dashboard .top {
   width: 100vh;
   z-index: 2;
   background-color: #fff;
-  border: 1px solid #ccc;
   border-radius: 10px;
   transition: top .3s ease-in-out;
   position: fixed;
   top: -100%;
-  left: 50%;
+  left: 60%;
   transform: translate(-50%, -50%);
 }
 
@@ -388,7 +391,7 @@ nav.close ~ .dashboard .top {
 }
 
 .modal .header {
-  background-color: #d9d5ff;
+  background-color: #f2f0ff;
   border-bottom: 1px solid #ccc;
   justify-content: space-between;
   align-items: center;
@@ -403,7 +406,7 @@ nav.close ~ .dashboard .top {
 #overlay {
   width: 100%;
   height: 100%;
-  background-color: #0000004d;
+  background-color: #b6b8ca4d;
   display: none;
   position: fixed;
   top: 0;
@@ -415,9 +418,9 @@ nav.close ~ .dashboard .top {
 }
 
 #todo_input, #todo_submit {
-  width: 100%;
+  width: 50%;
   margin: .25rem;
-  padding: .5rem 1rem;
+  padding: 1rem .5rem;
 }
 
 #todo_submit {
@@ -508,11 +511,12 @@ nav.close ~ .dashboard .top {
   outline: #3a3b3c;
   margin: 0 .5rem;
   padding: .5rem 1rem;
+  font-size: .7rem;
   transition: all .4s;
 }
 
 .controls button:hover {
-  opacity: .7;
+  color: #8075ff;
 }
 
 .controls button:active {
@@ -726,7 +730,7 @@ i, i.fa-play-circle, i.fa-pause-circle, i.fa-step-forward, i.fa-step-backward {
 }
 
 .timer__btn--start {
-  background: #3a3b3c;
+  background: #8075ff;
 }
 
 .timer__btn--stop {
@@ -742,6 +746,10 @@ i, i.fa-play-circle, i.fa-pause-circle, i.fa-step-forward, i.fa-step-backward {
 #todo_input, #dueDateInput, #completionTimeInput, #estimatedTimeInput, #priorityInput {
   border-color: #8075ff;
   border-radius: 10px;
+}
+
+#newlist {
+  color: #d3d3d3;
 }
 
 /*# sourceMappingURL=index.c74267d1.css.map */

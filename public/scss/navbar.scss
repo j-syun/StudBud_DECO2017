@@ -72,7 +72,7 @@ nav .logo-image img{
 nav .logo-name .logo_name{
     font-size: 22px;
     font-weight: 600;
-    color: var(--text-color);
+    color: #8075FF;
     margin-left: 14px;
     transition: var(--tran-05);
 }
@@ -218,8 +218,12 @@ nav.close ~ .dashboard .top{
     //background-color: #d9d5ff;
     background-color: #FFF;
     border-radius: 20px;
-    border-color: #8075FF;
-    border-style: groove;
+    border-color: #8175ff98;
+    border-style:solid;
+}
+
+.link-name-color {
+    color:#8075FF;
 }
 
 
