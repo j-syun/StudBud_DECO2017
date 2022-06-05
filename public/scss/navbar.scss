@@ -11,15 +11,12 @@
 
 :root{
     /* ===== Colors ===== */
-    --primary-color: #0E4BF1;
+    --primary-color: #8075FF;
     --panel-color: #FFF;
     --text-color: #000;
     --black-light-color: #707070;
     --border-color: #e6e5e5;
     --toggle-color: #DDD;
-    --box1-color: #4DA3FF;
-    --box2-color: #FFE6AC;
-    --box3-color: #E7D1FC;
     --title-icon-color: #fff;
     
     /* ====== Transition ====== */
@@ -35,18 +32,15 @@ body{
 body.dark{
     --primary-color: #3A3B3C;
     --panel-color: #242526;
-    --text-color: #CCC;
+    --text-color: #F8F0FB;
     --black-light-color: #CCC;
     --border-color: #4D4C4C;
     --toggle-color: #FFF;
-    --box1-color: #3A3B3C;
-    --box2-color: #3A3B3C;
-    --box3-color: #3A3B3C;
     --title-icon-color: #CCC;
 }
 
 
-nav{
+nav {
     position: fixed;
     top: 0;
     left: 0;
@@ -56,6 +50,8 @@ nav{
     background-color: var(--panel-color);
     border-right: 1px solid var(--border-color);
     transition: var(--tran-05);
+    overflow-x: hidden;
+    z-index: 1;
 }
 nav.close{
     width: 73px;
@@ -103,15 +99,7 @@ nav .menu-items{
     text-decoration: none;
     position: relative;
 }
-.nav-links li a:hover:before{
-    content: "";
-    position: absolute;
-    left: -7px;
-    height: 5px;
-    width: 5px;
-    border-radius: 50%;
-    background-color: var(--primary-color);
-}
+
 body.dark li a:hover:before{
     background-color: var(--text-color);
 }
@@ -281,6 +269,36 @@ nav.close ~ .dashboard .top{
 .boxes .box.box3{
     background-color: var(--box3-color);
 }
+
+
+.dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #FFF;
+    display: block;
+    border: none;
+    background: none;
+    width:100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+  }
+
+  .uil-angle-down {
+    float: right;
+    padding-right: 8px;
+  }
+
+  .dropdown-container {
+    display: none;
+    background-color: #fff;
+    padding-left: 20px;
+    opacity: 50%;
+  }
+
+  
+
 
 @media (max-width: 1000px) {
     nav{

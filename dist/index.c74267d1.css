@@ -8,15 +8,12 @@
 }
 
 :root {
-  --primary-color: #0e4bf1;
+  --primary-color: #8075ff;
   --panel-color: #fff;
   --text-color: #000;
   --black-light-color: #707070;
   --border-color: #e6e5e5;
   --toggle-color: #ddd;
-  --box1-color: #4da3ff;
-  --box2-color: #ffe6ac;
-  --box3-color: #e7d1fc;
   --title-icon-color: #fff;
   --tran-05: all .5s ease;
   --tran-03: all .3s ease;
@@ -31,13 +28,10 @@ body {
 body.dark {
   --primary-color: #3a3b3c;
   --panel-color: #242526;
-  --text-color: #ccc;
+  --text-color: #f8f0fb;
   --black-light-color: #ccc;
   --border-color: #4d4c4c;
   --toggle-color: #fff;
-  --box1-color: #3a3b3c;
-  --box2-color: #3a3b3c;
-  --box3-color: #3a3b3c;
   --title-icon-color: #ccc;
 }
 
@@ -47,10 +41,12 @@ nav {
   background-color: var(--panel-color);
   border-right: 1px solid var(--border-color);
   transition: var(--tran-05);
+  z-index: 1;
   padding: 10px 14px;
   position: fixed;
   top: 0;
   left: 0;
+  overflow-x: hidden;
 }
 
 nav.close {
@@ -105,16 +101,6 @@ nav .menu-items {
   text-decoration: none;
   display: flex;
   position: relative;
-}
-
-.nav-links li a:hover:before {
-  content: "";
-  height: 5px;
-  width: 5px;
-  background-color: var(--primary-color);
-  border-radius: 50%;
-  position: absolute;
-  left: -7px;
 }
 
 body.dark li a:hover:before {
@@ -309,6 +295,32 @@ nav.close ~ .dashboard .top {
   background-color: var(--box3-color);
 }
 
+.dropdown-btn {
+  color: #fff;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+  padding: 6px 8px 6px 16px;
+  font-size: 20px;
+  text-decoration: none;
+  display: block;
+}
+
+.uil-angle-down {
+  float: right;
+  padding-right: 8px;
+}
+
+.dropdown-container {
+  opacity: .5;
+  background-color: #fff;
+  padding-left: 20px;
+  display: none;
+}
+
 @media (max-width: 1000px) {
   nav {
     width: 73px;
@@ -426,7 +438,7 @@ nav.close ~ .dashboard .top {
 .todo .close {
   color: #8075ff;
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 2rem;
   position: absolute;
   right: 1rem;
 }
